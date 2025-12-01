@@ -7,6 +7,8 @@ const ProductDetail = lazy(() => import("@/components/pages/ProductDetail"));
 const Category = lazy(() => import("@/components/pages/Category"));
 const Search = lazy(() => import("@/components/pages/Search"));
 const Cart = lazy(() => import("@/components/pages/Cart"));
+const Checkout = lazy(() => import("@/components/pages/Checkout"));
+const OrderConfirmation = lazy(() => import("@/components/pages/OrderConfirmation"));
 const Wishlist = lazy(() => import("@/components/pages/Wishlist"));
 const NotFound = lazy(() => import("@/components/pages/NotFound"));
 
@@ -53,11 +55,27 @@ const mainRoutes = [
       </Suspense>
     ),
   },
-  {
+{
     path: "cart",
     element: (
       <Suspense fallback={<LoadingFallback text="Loading cart..." />}>
         <Cart />
+      </Suspense>
+    ),
+  },
+  {
+    path: "checkout",
+    element: (
+      <Suspense fallback={<LoadingFallback text="Loading checkout..." />}>
+        <Checkout />
+      </Suspense>
+    ),
+  },
+  {
+    path: "order-confirmation",
+    element: (
+      <Suspense fallback={<LoadingFallback text="Loading confirmation..." />}>
+        <OrderConfirmation />
       </Suspense>
     ),
   },

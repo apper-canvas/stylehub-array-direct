@@ -65,8 +65,26 @@ const cartSlice = createSlice({
       }
       saveCartToStorage(state.items);
     },
-    clearCart: (state) => {
+clearCart: (state) => {
       state.items = [];
+      saveCartToStorage(state.items);
+    },
+    
+    // Checkout related actions
+    startCheckout: (state, action) => {
+      state.checkoutData = {
+        items: [...state.items],
+        subtotal: action.payload.subtotal,
+        shipping: action.payload.shipping,
+        tax: action.payload.tax,
+        total: action.payload.total,
+        timestamp: Date.now()
+      };
+    },
+    
+    completeCheckout: (state, action) => {
+      state.items = [];
+      state.checkoutData = null;
       saveCartToStorage(state.items);
     },
   },

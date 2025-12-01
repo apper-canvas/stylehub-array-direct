@@ -47,9 +47,12 @@ const Cart = () => {
     toast.success("Cart cleared");
   };
 
-  const handleCheckout = () => {
-    toast.success("Proceeding to checkout...");
-    // In a real app, this would navigate to checkout
+const handleCheckout = () => {
+    if (cartCount === 0) {
+      toast.error("Your cart is empty");
+      return;
+    }
+    navigate("/checkout");
   };
 
   const subtotal = cartTotal;
