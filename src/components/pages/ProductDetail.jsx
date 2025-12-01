@@ -10,6 +10,7 @@ import PriceDisplay from "@/components/molecules/PriceDisplay";
 import ProductCard from "@/components/molecules/ProductCard";
 import Loading from "@/components/ui/Loading";
 import ErrorView from "@/components/ui/ErrorView";
+import ReviewSection from "@/components/molecules/ReviewSection";
 import { addToCart } from "@/store/slices/cartSlice";
 import { addToWishlist, removeFromWishlist, selectIsInWishlist } from "@/store/slices/wishlistSlice";
 import { fetchProductById, selectCurrentProduct, selectProductsLoading, selectProductsError, clearError } from "@/store/slices/productsSlice";
@@ -371,6 +372,8 @@ const ProductDetail = () => {
           </div>
         </motion.div>
       </div>
+{/* Reviews Section */}
+      <ReviewSection productId={id} />
 
       {/* Similar Products */}
       {similarProducts.length > 0 && (
