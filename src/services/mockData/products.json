@@ -1,0 +1,322 @@
+[
+  {
+    "Id": 1,
+    "name": "Premium Cotton T-Shirt",
+    "brand": "StyleCo",
+    "category": "Men",
+    "subcategory": "T-Shirts",
+    "price": 1999,
+    "discountPrice": 1399,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583743814966-8936f37f4678?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Black", "White", "Navy"],
+    "description": "Premium quality cotton t-shirt with superior comfort and fit. Perfect for casual wear with excellent breathability.",
+    "inStock": true,
+    "rating": 4.5,
+    "reviewCount": 234
+  },
+  {
+    "Id": 2,
+    "name": "Denim Slim Fit Jeans",
+    "brand": "UrbanFit",
+    "category": "Men",
+    "subcategory": "Jeans",
+    "price": 3499,
+    "discountPrice": 2449,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1582552938357-32b906df40cb?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["28", "30", "32", "34", "36"],
+    "colors": ["Dark Blue", "Light Blue", "Black"],
+    "description": "Slim fit denim jeans crafted from premium denim fabric. Features modern cut with comfortable stretch.",
+    "inStock": true,
+    "rating": 4.3,
+    "reviewCount": 189
+  },
+  {
+    "Id": 3,
+    "name": "Elegant Maxi Dress",
+    "brand": "FloralChic",
+    "category": "Women",
+    "subcategory": "Dresses",
+    "price": 4999,
+    "discountPrice": 3499,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1566479179817-c3ad4b63a10e?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": ["Floral Print", "Solid Black", "Navy Blue"],
+    "description": "Flowing maxi dress perfect for special occasions. Features elegant silhouette with comfortable fabric.",
+    "inStock": true,
+    "rating": 4.7,
+    "reviewCount": 156
+  },
+  {
+    "Id": 4,
+    "name": "Designer Blouse",
+    "brand": "ElegantWear",
+    "category": "Women",
+    "subcategory": "Tops",
+    "price": 2999,
+    "discountPrice": 1999,
+    "discountPercent": 33,
+    "images": [
+      "https://images.unsplash.com/photo-1594633313593-bab3825d0caf?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["XS", "S", "M", "L"],
+    "colors": ["White", "Cream", "Light Pink"],
+    "description": "Sophisticated designer blouse with intricate detailing. Perfect for office wear or formal occasions.",
+    "inStock": true,
+    "rating": 4.4,
+    "reviewCount": 98
+  },
+  {
+    "Id": 5,
+    "name": "Kids Cartoon T-Shirt",
+    "brand": "FunKids",
+    "category": "Kids",
+    "subcategory": "T-Shirts",
+    "price": 899,
+    "discountPrice": 629,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["2-3Y", "4-5Y", "6-7Y", "8-9Y"],
+    "colors": ["Red", "Blue", "Yellow"],
+    "description": "Fun cartoon printed t-shirt for kids. Made with soft, skin-friendly fabric that's perfect for active children.",
+    "inStock": true,
+    "rating": 4.6,
+    "reviewCount": 267
+  },
+  {
+    "Id": 6,
+    "name": "Running Sneakers",
+    "brand": "SportMax",
+    "category": "Men",
+    "subcategory": "Shoes",
+    "price": 5999,
+    "discountPrice": 4199,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["7", "8", "9", "10", "11"],
+    "colors": ["White", "Black", "Navy"],
+    "description": "High-performance running sneakers with excellent cushioning and support. Perfect for daily workouts.",
+    "inStock": true,
+    "rating": 4.8,
+    "reviewCount": 445
+  },
+  {
+    "Id": 7,
+    "name": "Leather Handbag",
+    "brand": "LuxeBags",
+    "category": "Women",
+    "subcategory": "Bags",
+    "price": 8999,
+    "discountPrice": 6299,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["One Size"],
+    "colors": ["Black", "Brown", "Tan"],
+    "description": "Premium leather handbag with multiple compartments. Combines style and functionality for modern women.",
+    "inStock": true,
+    "rating": 4.5,
+    "reviewCount": 123
+  },
+  {
+    "Id": 8,
+    "name": "Formal Shirt",
+    "brand": "BusinessWear",
+    "category": "Men",
+    "subcategory": "Shirts",
+    "price": 2499,
+    "discountPrice": 1749,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["38", "40", "42", "44", "46"],
+    "colors": ["White", "Light Blue", "Light Pink"],
+    "description": "Classic formal shirt perfect for office and business meetings. Made from premium cotton blend.",
+    "inStock": true,
+    "rating": 4.2,
+    "reviewCount": 187
+  },
+  {
+    "Id": 9,
+    "name": "Summer Skirt",
+    "brand": "SummerVibes",
+    "category": "Women",
+    "subcategory": "Skirts",
+    "price": 1999,
+    "discountPrice": 1399,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1583496661160-fb5886a13d24?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1594633313593-bab3825d0caf?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": ["Floral", "Solid Pink", "White"],
+    "description": "Light and breezy summer skirt perfect for warm weather. Features comfortable elastic waistband.",
+    "inStock": true,
+    "rating": 4.3,
+    "reviewCount": 145
+  },
+  {
+    "Id": 10,
+    "name": "Kids Denim Jacket",
+    "brand": "MiniStyle",
+    "category": "Kids",
+    "subcategory": "Jackets",
+    "price": 1999,
+    "discountPrice": 1399,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["2-3Y", "4-5Y", "6-7Y", "8-9Y", "10-11Y"],
+    "colors": ["Light Blue", "Dark Blue"],
+    "description": "Trendy denim jacket for kids. Durable construction with comfortable fit for growing children.",
+    "inStock": true,
+    "rating": 4.4,
+    "reviewCount": 89
+  },
+  {
+    "Id": 11,
+    "name": "Casual Polo Shirt",
+    "brand": "StyleCo",
+    "category": "Men",
+    "subcategory": "Shirts",
+    "price": 1799,
+    "discountPrice": 1259,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Navy", "White", "Red", "Green"],
+    "description": "Comfortable polo shirt perfect for casual outings. Made from breathable cotton blend fabric.",
+    "inStock": true,
+    "rating": 4.1,
+    "reviewCount": 156
+  },
+  {
+    "Id": 12,
+    "name": "High Heels",
+    "brand": "GlamourHeels",
+    "category": "Women",
+    "subcategory": "Shoes",
+    "price": 4499,
+    "discountPrice": 3149,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1566479179817-c3ad4b63a10e?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["5", "6", "7", "8", "9"],
+    "colors": ["Black", "Nude", "Red"],
+    "description": "Elegant high heels perfect for parties and special occasions. Features comfortable cushioned insole.",
+    "inStock": true,
+    "rating": 4.0,
+    "reviewCount": 234
+  },
+  {
+    "Id": 13,
+    "name": "Printed Kurti",
+    "brand": "EthnicWear",
+    "category": "Women",
+    "subcategory": "Ethnic",
+    "price": 2999,
+    "discountPrice": 2099,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1594633313593-bab3825d0caf?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Multi", "Blue", "Pink"],
+    "description": "Beautiful printed kurti perfect for traditional and casual wear. Features comfortable cotton fabric.",
+    "inStock": true,
+    "rating": 4.6,
+    "reviewCount": 178
+  },
+  {
+    "Id": 14,
+    "name": "Sports Track Pants",
+    "brand": "ActiveWear",
+    "category": "Men",
+    "subcategory": "Track Pants",
+    "price": 1999,
+    "discountPrice": 1399,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Black", "Navy", "Grey"],
+    "description": "Comfortable track pants perfect for workouts and casual wear. Features elastic waistband and breathable fabric.",
+    "inStock": true,
+    "rating": 4.3,
+    "reviewCount": 267
+  },
+  {
+    "Id": 15,
+    "name": "Party Dress",
+    "brand": "GlamourNight",
+    "category": "Women",
+    "subcategory": "Dresses",
+    "price": 6999,
+    "discountPrice": 4899,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1566479179817-c3ad4b63a10e?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["XS", "S", "M", "L"],
+    "colors": ["Black", "Red", "Navy"],
+    "description": "Stunning party dress perfect for special occasions. Features elegant design with premium fabric.",
+    "inStock": true,
+    "rating": 4.8,
+    "reviewCount": 89
+  },
+  {
+    "Id": 16,
+    "name": "Kids School Uniform",
+    "brand": "SchoolStyle",
+    "category": "Kids",
+    "subcategory": "Uniforms",
+    "price": 1499,
+    "discountPrice": 1049,
+    "discountPercent": 30,
+    "images": [
+      "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=400&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400&h=500&fit=crop"
+    ],
+    "sizes": ["4-5Y", "6-7Y", "8-9Y", "10-11Y", "12-13Y"],
+    "colors": ["White", "Blue", "Grey"],
+    "description": "Quality school uniform set with comfortable fit. Made from durable, easy-care fabric.",
+    "inStock": true,
+    "rating": 4.4,
+    "reviewCount": 345
+  }
+]
