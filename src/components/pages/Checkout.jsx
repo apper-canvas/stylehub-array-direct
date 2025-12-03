@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -8,7 +8,6 @@ import { formatPrice } from '@/utils/formatters';
 import Button from '@/components/atoms/Button';
 import Input from '@/components/atoms/Input';
 import ApperIcon from '@/components/ApperIcon';
-
 const Checkout = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -36,20 +35,22 @@ const Checkout = () => {
   // Form validation errors
   const [errors, setErrors] = useState({});
 
-  // Calculate totals
-  const subtotal = cartTotal;
-  const shipping = cartTotal > 1500 ? 0 : 99;
-  const tax = Math.round(cartTotal * 0.08);
-  const finalTotal = subtotal + shipping + tax;
-
-  useEffect(() => {
+// Calculate totals with useMemo to prevent recalculation
+  const { subtotal, shipping, tax, finalTotal } = useMemo(() => {
+    const subtotal = cartTotal;
+    const shipping = cartTotal > 1500 ? 0 : 99;
+    const tax = Math.round(cartTotal * 0.08);
+    const finalTotal = subtotal + shipping + tax;
+    return { subtotal, shipping, tax, finalTotal };
+  }, [cartTotal]);
+// Memoize checkout initialization to prevent infinite loops
+  const initializeCheckout = useCallback(() => {
     if (cartCount === 0) {
       toast.error("Your cart is empty");
       navigate('/cart');
       return;
     }
 
-    // Initialize checkout data
     dispatch(startCheckout({
       subtotal,
       shipping,
@@ -57,6 +58,10 @@ const Checkout = () => {
       total: finalTotal
     }));
   }, [cartCount, navigate, dispatch, subtotal, shipping, tax, finalTotal]);
+
+  useEffect(() => {
+    initializeCheckout();
+  }, [initializeCheckout]);
 
   const validateForm = () => {
     const newErrors = {};

@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AnimatePresence, motion } from "framer-motion";
-import ProductCard from "@/components/molecules/ProductCard";
-import FilterChip from "@/components/molecules/FilterChip";
 import Loading from "@/components/ui/Loading";
 import ErrorView from "@/components/ui/ErrorView";
 import Empty from "@/components/ui/Empty";
+import FilterChip from "@/components/molecules/FilterChip";
+import ProductCard from "@/components/molecules/ProductCard";
 import { 
   clearError, 
   fetchProducts, 
@@ -14,13 +14,13 @@ import {
   selectProductsLoading 
 } from "@/store/slices/productsSlice";
 import { 
+  clearAllFilters,
   selectActiveFilterCount, 
   selectFilters, 
   toggleBrand, 
   toggleCategory, 
   toggleColor, 
-  toggleSize,
-  clearAllFilters
+  toggleSize
 } from "@/store/slices/filtersSlice";
 
 const ProductGrid = () => {
@@ -31,9 +31,12 @@ const ProductGrid = () => {
   const filters = useSelector(selectFilters);
   const activeFilterCount = useSelector(selectActiveFilterCount);
 
+// Stabilize dispatch reference to prevent unnecessary re-renders
+  const stableDispatch = useCallback((action) => dispatch(action), [dispatch]);
+  
   useEffect(() => {
-    dispatch(fetchProducts(filters));
-  }, [dispatch, filters]);
+    stableDispatch(fetchProducts(filters));
+  }, [stableDispatch, filters]);
 
   const handleRetry = () => {
     dispatch(clearError());
