@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from "react";
+import React, { useCallback, useEffect, useRef, useLayoutEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AnimatePresence, motion } from "framer-motion";
 import Loading from "@/components/ui/Loading";
@@ -30,13 +30,29 @@ const ProductGrid = () => {
   const error = useSelector(selectProductsError);
   const filters = useSelector(selectFilters);
   const activeFilterCount = useSelector(selectActiveFilterCount);
+  
+  // Scroll position preservation
+  const scrollPositionRef = useRef(0);
+  const preserveScrollRef = useRef(false);
 
 // Stabilize dispatch reference to prevent unnecessary re-renders
   const stableDispatch = useCallback((action) => dispatch(action), [dispatch]);
   
+  // Preserve scroll position before filter changes
   useEffect(() => {
+    if (preserveScrollRef.current) {
+      scrollPositionRef.current = window.scrollY;
+    }
+    preserveScrollRef.current = true;
     stableDispatch(fetchProducts(filters));
   }, [stableDispatch, filters]);
+
+  // Restore scroll position after filter changes
+  useLayoutEffect(() => {
+    if (preserveScrollRef.current && scrollPositionRef.current > 0) {
+      window.scrollTo(0, scrollPositionRef.current);
+    }
+  }, [products]);
 
   const handleRetry = () => {
     dispatch(clearError());
